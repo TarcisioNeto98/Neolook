@@ -1,0 +1,20 @@
+typedef struct processo Processo;
+
+Processo* cria_processo();
+void inserir_demandas(Processo *p, int *v, int id, int idComp);
+int getIdProcesso(Processo *p);
+int getTempoInicial(Processo *p);
+int getCpu(Processo *p);
+int getDisco(Processo *p);
+int getRede(Processo *p);
+int getEspera(Processo *p);
+int getIdDiscoUsado(Processo *p);
+int getIdComputador(Processo *p);
+char getDados(Processo *p);
+void setIdDisco(Processo *p, int id);
+void setDado(Processo *p, char d);
+void setEspera(Processo *p, int espera);
+void setTempoInicial(Processo *p, int i);
+void destroi_processo(Processo *p);
+void imprimir_processo(Processo *p);
+void imprimir_processo_espera(Processo *p);
